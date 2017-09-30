@@ -1,0 +1,26 @@
+{
+	Load: 0,
+	
+	RateInit: 2e-2,
+	RateDecay: 0.9,
+
+	EpochTrain: 4,
+	EpochDecay: 0.2,
+	EpochLog: 0.2,
+
+	InputType: 'onehot',
+	LossType: 'mse',
+	LossInit: 500,
+	Regularization: 0.01,
+	
+	Image: {
+		Draw: true,
+		Src: 'layer last',
+	},
+
+	Model: 		'model_reverse.txt',
+
+	TrainIn:	'train_out.smpl',
+	TrainOut:	'train_in.smpl',
+
+}

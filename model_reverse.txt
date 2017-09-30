@@ -1,0 +1,22 @@
+[
+	{
+  		Shape: [1, 1, 10],
+	},
+	{
+  		Shape: [7, 7, 4],
+  		Kernel: [7, 7],
+  		IsReverse: true,
+	},
+	{
+  		Shape: [14, 14, 2],
+  		Kernel: [6, 6],
+  		Pad: [2, 2],
+  		IsReverse: true,
+	},
+	{
+		Shape: [28, 28, 1],
+		Kernel: [6, 6],
+		Pad: [2, 2],
+		IsReverse: true,
+	},
+]

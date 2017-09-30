@@ -1,32 +1,19 @@
-{	
-	Rate: 0.6e-1,
+{
+	Load: 0,
+	
+	RateInit: 0.01,
 
-	EpochTrain: 320,
-	EpochDecay: 5,
-	EpochLog: 5,
+	EpochTrain: 3,
+	EpochDecay: 0.2,
+	EpochLog: 0.2,
 
 	InputType: 'pointwise',
-	LossType: 'mse',
+	LossType: 'softmax',
 
-	WeightFiller: {
-		Type: 'gsni',
-		Adj: [0, 0.8],
-	},
-	
 	Image: {
 		Draw: true,
-		Src: 'predict',
+		Src: 'layer 0',
 	},
 
-	Model: 		'model.txt',
-	Para: 		'',
-	TrainIn:	'train_in.smpl',
-	TrainOut:	'train_out.smpl',
-	TestIn:		'',
-	TestOut:	'',
-	PredictIn:	'train_in.smpl',
-	PredictOut:	'',
-	
-	FreqPredict: 2,
-	FreqSave: 0,
+	FreqTest: 2,
 }

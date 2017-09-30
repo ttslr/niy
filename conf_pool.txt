@@ -1,0 +1,21 @@
+{
+	Load: 0,
+	
+	RateInit: 0.03,
+
+	EpochTrain: 2,
+	EpochDecay: 0.2,
+	EpochLog: 0.2,
+
+	InputType: 'pointwise',
+	LossType: 'max',
+
+	Image: {
+		Draw: true,
+		Src: 'layer 0',
+	},
+
+	Model: 'model_pool.txt',
+
+	FreqTest: 2,
+}
