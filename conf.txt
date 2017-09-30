@@ -1,5 +1,5 @@
 {	
-	Rate: 0.6e-1,
+	RateInit: 0.6e-1,
 
 	EpochTrain: 320,
 	EpochDecay: 5,
@@ -18,12 +18,6 @@
 		Src: 'predict',
 	},
 
-	Model: 		'model.txt',
-	Para: 		'',
-	TrainIn:	'train_in.smpl',
-	TrainOut:	'train_out.smpl',
-	TestIn:		'',
-	TestOut:	'',
 	PredictIn:	'train_in.smpl',
 	PredictOut:	'',
 	
