@@ -1,4 +1,4 @@
-Niy
+[Niy](https://github.com/microic/niy)
 ====  
 Mnist experiment 
 
