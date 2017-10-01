@@ -4,9 +4,16 @@ Image painting experiment
 
 Installation
 ----
+#### Windows
 * Download all the files
 * Double click run.bat
-
+#### Linux
+* Download all the files
+* Open a teminal
+	apt-get install imagemagick
+	chmod +x ./run.sh
+	./run.sh
+    
 Reference
 ----
 * [ConvnetJS](http://cs.stanford.edu/people/karpathy/convnetjs/demo/image_regression.html)
