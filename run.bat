@@ -1,6 +1,7 @@
 @echo off
 
 start _img.bmp
-niy
+
+niy conf.txt
 
 pause
