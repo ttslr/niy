@@ -2,7 +2,6 @@
 ====  
 Mnist experiment 
 
-
 Installation
 ----
 #### Windows
