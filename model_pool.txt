@@ -3,11 +3,11 @@
 	
 	{Shape: [28, 28, 2], Kernel: [3, 3], Pad: [1, 1]},
 	{Shape: [28, 28, 2], Kernel: [3, 3], Pad: [1, 1]},
-	{Shape: [14, 14, 2], PoolType: 'amax'},
+	{Shape: [14, 14, 2], PoolType: 'rand'},
 
 	{Shape: [14, 14, 4], Kernel: [3, 3], Pad: [1, 1]},
 	{Shape: [14, 14, 4], Kernel: [3, 3], Pad: [1, 1]},
-	{Shape: [7, 7, 4], PoolType: 'amax'},
+	{Shape: [7, 7, 4], PoolType: 'rand'},
 
 	{Shape: [1, 1, 10], Kernel: [7, 7]},
 ]
