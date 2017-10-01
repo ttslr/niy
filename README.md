@@ -9,9 +9,9 @@ Installation
 * Double click run.bat
 #### Linux
 * Download all the files
-* Open a teminal
+* Open a terminal
 	apt-get install imagemagick
-	chmod +x ./run.sh
+	chmod +x ./run.sh ./niy
 	./run.sh
     
 Reference
