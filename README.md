@@ -12,7 +12,9 @@ Installation
 * Open a terminal
 
     apt-get install imagemagick
+
     chmod +x ./run.sh ./niy
+
     ./run.sh
     
 Reference
