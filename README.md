@@ -9,5 +9,5 @@ Installation
 
 Reference
 ----
-[](http://cs.stanford.edu/people/karpathy/convnetjs/demo/image_regression.html)
-[](http://caza.la/synaptic/#/paint-an-image)
+[http://cs.stanford.edu/people/karpathy/convnetjs/demo/image_regression.html](http://cs.stanford.edu/people/karpathy/convnetjs/demo/image_regression.html)
+[http://caza.la/synaptic/#/paint-an-image](http://caza.la/synaptic/#/paint-an-image)
