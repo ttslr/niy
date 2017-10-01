@@ -10,6 +10,7 @@ Installation
 #### Linux
 * Download all the files
 * Open a terminal
+
     apt-get install imagemagick
     chmod +x ./run.sh ./niy
     ./run.sh
