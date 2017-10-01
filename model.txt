@@ -3,15 +3,15 @@
 		Shape: [1, 1, 2],
 	},
 	{
-  		Shape: [1, 1, 6],
+  		Shape: [1, 1, 4],
   		Kernel: [1, 1],
 	},
 	{
-  		Shape: [1, 1, 6],
+  		Shape: [1, 1, 4],
   		Kernel: [1, 1],
 	},
 	{
-  		Shape: [1, 1, 6],
+  		Shape: [1, 1, 4],
   		Kernel: [1, 1],
 	},
 	{
