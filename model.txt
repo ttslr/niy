@@ -1,0 +1,7 @@
+[
+	{Shape: [32, 32, 3]},
+	{Shape: [14, 14, 2], Kernel: [6, 6], IsLocal: true},
+	{Shape: [6, 6, 4], Kernel: [6, 6], Pad: [1, 1], IsLocal: true},
+	{Shape: [3, 3, 8], Kernel: [6, 6], Pad: [1, 1], IsLocal: true},
+	{Shape: [1, 1, 10], Kernel: [3, 3], IsLocal: true},
+]

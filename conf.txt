@@ -1,0 +1,20 @@
+{
+	Load: 2,
+	
+	RateInit: 0.03,
+
+	EpochTrain: 2,
+	EpochDecay: 0.2,
+	EpochLog: 0.2,
+
+	InputType: 'pointwise',
+	LossType: 'zero',
+
+	Image: {
+		Draw: true,
+		Src: 'layer 0',
+	},
+
+	FreqTest: 2,
+	FreqSave: 1,
+}
