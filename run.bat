@@ -1,11 +1,7 @@
 @echo off
 
-start _img.bmp
+start bmp_viewer 
 
 niy conf.txt
-
-rem niy conf_pool.txt
-rem niy conf_reverse.txt
-rem niy conf_shortcut.txt
 
 pause
