@@ -1,6 +1,6 @@
 @echo off
 
-start _img.bmp
+start bmp_viewer 
 
 niy conf.txt
 

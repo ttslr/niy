@@ -1,14 +1,24 @@
 {	
 	RateInit: 0.6e-1,
+	RateDecay: 0.99,
 
-	EpochTrain: 320,
+	Load: 0,
+
+	EpochTrain: 800,
 	EpochDecay: 5,
 	EpochLog: 5,
 
 	InputType: 'pointwise',
 	LossType: 'mse',
 
-	WeightFiller: {
+	Regularization: 1,
+
+	_BiasFiller: {
+		Type: 'gsnf',
+		Adj: [0, 0.001],
+	},
+
+	_WeightFiller: {
 		Type: 'gsni',
 		Adj: [0, 0.8],
 	},
@@ -22,5 +32,5 @@
 	PredictOut:	'',
 	
 	FreqPredict: 2,
-	FreqSave: 0,
+	FreqSave: 1,
 }

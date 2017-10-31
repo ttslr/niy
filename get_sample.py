@@ -7,6 +7,9 @@ import matplotlib.image as mpimg
 
 # src = r"src/chess.png"
 # src = r"src/rhombus.png"
+# src = r"src/word.png"
+# src = r"src/line.png"
+# src = r"src/noise.png"
 src = r"src/man.png"
 
 print(src)
