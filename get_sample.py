@@ -5,14 +5,14 @@ import struct
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 
-# src = r"src/chess.png"
-# src = r"src/rhombus.png"
-# src = r"src/word.png"
-# src = r"src/line.png"
-# src = r"src/noise.png"
-src = r"src/man.png"
+# filename = r"files/chess.png"
+# filename = r"files/rhombus.png"
+# filename = r"files/word.png"
+# filename = r"files/line.png"
+# filename = r"files/noise.png"
+filename = r"files/man.png"
 
-print(src)
+print(filename)
 
 sample_in_bytes = bytearray()
 sample_out_bytes = bytearray()
@@ -22,7 +22,7 @@ sample_out_head = np.zeros(8).astype("int32")
 sample_in_head[1:4] = [1, 1, 2]
 sample_out_head[1:4] = [1, 1, 3]
 
-im = mpimg.imread(src)
+im = mpimg.imread(filename)
 
 im = im[:,:,:3]
 if im.shape[2] != 3:
@@ -60,6 +60,6 @@ with open("train_in.smpl", "wb") as file:
 with open("train_out.smpl", "wb") as file:
 	file.write(sample_out_bytes)
 
-im = mpimg.imread(src)
+im = mpimg.imread(filename)
 plt.imshow(im)
 plt.show()
