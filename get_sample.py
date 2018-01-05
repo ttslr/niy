@@ -29,7 +29,7 @@ if im.shape[2] != 3:
 	os._exit(0)
 
 im = im.astype("float32")
-if (im.max() - im.min()) <= 1:
+if (im.max() - im.min()) <= 2:
 	im *= 255.0
 im = im / 255.0 - 0.5
 
