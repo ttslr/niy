@@ -1,0 +1,22 @@
+{	
+	RateInit: 3e-2,
+	RateDecay: 0.9,
+
+	Load: 2,
+
+	EpochTrain: 10,
+	EpochDecay: 1,
+	EpochLog: 0.1,
+
+	InputType: 'pointwise',
+	LossType: 'zero',
+
+	Regularization: 1,
+	
+	TestIn: 'train_in.smpl',
+	TestOut: 'train_out.smpl',
+
+	FreqTest: 1,
+	FreqPredict: 0,
+	FreqSave: 1,
+}

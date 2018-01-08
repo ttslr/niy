@@ -1,0 +1,26 @@
+{	
+	RateInit: 0.6e-1,
+	RateDecay: 0.99,
+
+	Load: 0,
+
+	EpochTrain: 150,
+	EpochDecay: 0.2,
+	EpochLog: 0.2,
+
+	InputType: 'pointwise',
+	LossType: 'mse',
+
+	Regularization: 1,
+	
+	Image: {
+		Draw: true,
+		Src: 'predict',
+	},
+
+	PredictIn:	'train_in.smpl',
+	PredictOut:	'',
+	
+	FreqPredict: 2,
+	FreqSave: 1,
+}
