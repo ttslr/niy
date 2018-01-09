@@ -10,7 +10,7 @@ We use WAVE audio files of people saying ten different words('yes', 'no', 'up', 
 Each WAVE audio file is one second long(if less than one second, fill with silence) with a frame rate of 16000, so the model can be defined as follow:
 <div><img src="files/model.png" /></div> 
 
-Run this model, you will get a test accuracy around 70% after 20 minutes
+Run this model, you will get a test accuracy around 68% after 20 minutes
 
 
 To increase test accuracy, you can simply increase the number of channels within each hidden layer

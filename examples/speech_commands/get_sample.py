@@ -7,7 +7,11 @@ from scipy.io import wavfile
 
 dataset_link = "https://storage.cloud.google.com/download.tensorflow.org/data/speech_commands_v0.01.tar.gz"
 
+import platform
+
 filedir = "D:\\speech_commands_v0.01/"
+if platform.system().lower() != "windows":
+	filedir = "/usr/local/speech_commands_v0.01/"
 
 commands = ['yes', 'no', 'up', 'down', 'left', 'right', 'on', 'off', 'stop', 'go']
 for command in commands:
