@@ -1,4 +1,4 @@
-import os, time, sys
+import os, time, sys, platform
 
 import numpy as np
 import array, random
@@ -6,8 +6,6 @@ import glob
 from scipy.io import wavfile
 
 dataset_link = "https://storage.cloud.google.com/download.tensorflow.org/data/speech_commands_v0.01.tar.gz"
-
-import platform
 
 filedir = "D:\\speech_commands_v0.01/"
 if platform.system().lower() != "windows":
