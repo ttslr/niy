@@ -29,8 +29,8 @@ Layer2 [label="Layer 2    size: [159, 1, 4]"]
 Layer3 [label="Layer 3    size: [15, 1, 8]"]
 Output [label="Output    size: [1, 1, 10]"]
 
-Input->Layer1 [label="  Convolution    kernel: [20, 1]"]
-Layer1->Layer2 [label="  Convolution    kernel: [19, 1]"]
-Layer2->Layer3 [label="  Convolution    kernel: [19, 1]"]
-Layer3->Output [label="  Convolution    kernel: [15, 1]"]
+Input->Layer1 [label="  Convolution    kernel: [20, 1], stride: [10, 1]"]
+Layer1->Layer2 [label="  Convolution    kernel: [19, 1], stride: [10, 1]"]
+Layer2->Layer3 [label="  Convolution    kernel: [19, 1], stride: [10, 1]"]
+Layer3->Output [label="  Convolution    kernel: [15, 1], stride: [1, 1]"]
 }
