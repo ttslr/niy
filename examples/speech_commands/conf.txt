@@ -4,8 +4,8 @@
 
 	Load: 2,
 
-	EpochTrain: 10,
-	EpochDecay: 1,
+	EpochTrain: 8,
+	EpochDecay: 0.8,
 	EpochLog: 0.1,
 
 	InputType: 'pointwise',

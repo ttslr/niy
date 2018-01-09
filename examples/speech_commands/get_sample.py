@@ -5,20 +5,24 @@ import array, random
 import glob
 from scipy.io import wavfile
 
-dataset_path = "https://storage.cloud.google.com/download.tensorflow.org/data/speech_commands_v0.01.tar.gz"
-filedir = "./files/speech_commands_v0.01/"
+dataset_link = "https://storage.cloud.google.com/download.tensorflow.org/data/speech_commands_v0.01.tar.gz"
+
+filedir = "D:\\speech_commands_v0.01/"
+
 commands = ['yes', 'no', 'up', 'down', 'left', 'right', 'on', 'off', 'stop', 'go']
 for command in commands:
 	if (os.path.exists(filedir + command)):
 		continue
-	print("Please download the speech commands dataset from " + dataset_path + " and extract it into " + filedir)
+	print("Please download the speech commands dataset from " + dataset_link + " and extract it into " + filedir)
 	os._exit(0)
 
 random.seed(2)
 
+X_SIZE = 16000
+
 train_in_bytes = bytearray()
 train_in_head = np.zeros(8).astype('int32')
-train_in_head[1:4] = [10000, 1, 1]
+train_in_head[1:4] = [X_SIZE, 1, 1]
 train_in_bytes += train_in_head.tobytes()
 
 train_out_bytes = bytearray()
@@ -45,12 +49,11 @@ for (Y[0], command) in enumerate(commands):
 	for i in range(paths_len):
 		framerate, wav_data = wavfile.read(paths[i])
 		
-		x_size = 16000
-		if len(wav_data) > x_size:
-			print("%d, %d" % (len(wav_data), x_size))
-			wav_data = wav_data[:x_size]
+		if len(wav_data) > X_SIZE:
+			print("%d, %d" % (len(wav_data), X_SIZE))
+			wav_data = wav_data[:X_SIZE]
 
-		X = np.zeros(x_size, dtype="float32")
+		X = np.zeros(X_SIZE, dtype="float32")
 		X[:len(wav_data)] += wav_data
 
 		X = (X-X.min())/(X.max()-X.min())
