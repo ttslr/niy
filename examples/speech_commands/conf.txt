@@ -2,9 +2,9 @@
 	RateInit: 3e-2,
 	RateDecay: 0.9,
 
-	Load: 2,
+	Load: 0,
 
-	EpochTrain: 10,
+	EpochTrain: 40,
 	EpochDecay: 0.8,
 	EpochLog: 0.1,
 
