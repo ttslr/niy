@@ -2,9 +2,9 @@
 	RateInit: 3e-2,
 	RateDecay: 0.9,
 
-	Load: 2,
+	Load: 0,
 
-	EpochTrain: 8,
+	EpochTrain: 10,
 	EpochDecay: 0.8,
 	EpochLog: 0.1,
 
@@ -13,8 +13,8 @@
 
 	Regularization: 1,
 	
-	TestIn: 'train_in.smpl',
-	TestOut: 'train_out.smpl',
+	_TestIn: 'train_in.smpl',
+	_TestOut: 'train_out.smpl',
 
 	FreqTest: 1,
 	FreqPredict: 0,
