@@ -15,7 +15,7 @@ Run this model, you will get a test accuracy around 68% after 20 minutes
 
 To increase test accuracy:
 * Increase the number of channels within each hidden layer
-* Data augmentation
+* Data augmentation<br>
     If train accuracy is high while test accuracy is low
 
 Reference
