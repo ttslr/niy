@@ -155,8 +155,8 @@ Niy uses [CON](https://github.com/microic/con) to define model and conf files
 | EpochDecay | how often to decay | 0.2 |
 | EpochLog | how often to log | 0.2 |
 | FreqTest | the frequency to test<br>**0**: never<br>**1**: test after training<br>**2**: test at each log time | 0 |
-| FreqPredict | the frequency to predict | 0 |
-| FreqSave | the frequency to save | 0 |
+| FreqPredict | the frequency to predict<br>**0**: never<br>**1**: predict after training<br>**2**: predict at each log time | 0 |
+| FreqSave | the frequency to save<br>**0**: never<br>**1**: save after training<br>**2**: save at each log time | 0 |
 | TestTable | test table size | 0 |
 | PredictTable | predict table size | 0 |
 
