@@ -117,7 +117,7 @@ Niy uses [CON](https://github.com/microic/con) to define model and conf files
 | Pad | padding | [0, 0] |
 | PoolType | **'max'**<br>**'ave'**<br>**'amax'**: absolute maximum<br>**'rand'** | 'ave' |
 | IsLocal | switch to locally connected layer | false |
-| IsReverse | switch to deconvolution layer | false |
+| IsReverse | switch to deconvolution layer<br>*deconvolution means the reverse operation of convolution here, not transpose convolution* | false |
 | IsMerge | switch to merge layer | 1 |
 | Group | split the channels into groups | 1 |
 | Dropout | dropout | null |
