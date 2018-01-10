@@ -13,8 +13,10 @@ Each WAVE audio file is one second long(if less than one second, fill with silen
 Run this model, you will get a test accuracy around 68% after 20 minutes
 
 
-To increase test accuracy, you can simply increase the number of channels within each hidden layer
-
+To increase test accuracy:
+* Increase the number of channels within each hidden layer
+* Data augmentation
+    If train accuracy is high while test accuracy is low
 
 Reference
 ----
