@@ -58,7 +58,8 @@ for (Y[0], command) in enumerate(commands):
 		X = np.zeros(X_SIZE, dtype="float32")
 		X[:len(wav_data)] += wav_data
 
-		X = (X-X.min())/(X.max()-X.min())
+		X = (X-X.min())/(X.max()-X.min()) 
+		# X -= 0.5
 
 		if i < paths_len * 0.9:
 			train_in_bytes += X.tobytes()
