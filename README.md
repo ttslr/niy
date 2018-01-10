@@ -136,11 +136,11 @@ Niy uses [CON](https://github.com/microic/con) to define model and conf files
 | LossMul | used to calculate the moving average of loss | 0.001 |
 | Regularization | used to limit bias/weight | 1 |
 | BiasFiller.Type | 'zero', 'uniform', 'usni', 'usno', 'usnio', 'usnf', 'gaussian', 'gsni', 'gsno', 'gsnio', 'gsnf' | 'zero' |
-| BiasFiller.Adj | used to adjust initial bias value<br>*new = (old + adj[0])*adj[1]* | [0, 1] |
+| BiasFiller.Adj | used to adjust initial bias value<br><i>new = (old + adj[0])*adj[1]</i> | [0, 1] |
 | WeightFiller.Type | 'zero', 'uniform', 'usni', 'usno', 'usnio', 'usnf', 'gaussian', 'gsni', 'gsno', 'gsnio', 'gsnf' | 'gsni' |
-| WeightFiller.Adj | used to adjust initial weight value<br>*new = (old + adj[0])*adj[1]* | [0, 0.8] |
+| WeightFiller.Adj | used to adjust initial weight value<br>new = (old + adj[0])*adj[1] | [0, 0.8] |
 | Image.Draw | draw current image or not | false |
-| Image.Adj | used to adjust pixel value<br>*new = (old + adj[0])*adj[1]* | [0.5, 255] |
+| Image.Adj | used to adjust pixel value<br>new = (old + adj[0])*adj[1] | [0.5, 255] |
 | Image.Src | **'layer 0'**<br>**'layer last'**<br>**'predict'** | 'layer 0' |
 | Image.Path | image file path | '_img.bmp' |
 | Model | model file path | 'model.txt' |
