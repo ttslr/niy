@@ -6,7 +6,7 @@
 
 	EpochTrain: 40,
 	EpochDecay: 0.8,
-	EpochLog: 0.1,
+	EpochLog: 0.8,
 
 	InputType: 'pointwise',
 	LossType: 'zero',
@@ -16,7 +16,7 @@
 	_TestIn: 'train_in.smpl',
 	_TestOut: 'train_out.smpl',
 
-	FreqTest: 1,
+	FreqTest: 2,
 	FreqPredict: 0,
 	FreqSave: 1,
 }
