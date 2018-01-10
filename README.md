@@ -16,7 +16,6 @@ Sponsor will get the following rights:
 
 The sponsorship will be used on developing Niy and nothing else
 
-
 Installation
 ----
 Select one of the following experiments
@@ -155,7 +154,7 @@ Niy uses [CON](https://github.com/microic/con) to define model and conf files
 | EpochTrain | how many epochs to train | 1 |
 | EpochDecay | how often to decay | 0.2 |
 | EpochLog | how often to log | 0.2 |
-| FreqTest | the frequency to test | 0 |
+| FreqTest | the frequency to test<br>**0**: never<br>**1**: test after training<br>**2**: test at each log time | 0 |
 | FreqPredict | the frequency to predict | 0 |
 | FreqSave | the frequency to save | 0 |
 | TestTable | test table size | 0 |
