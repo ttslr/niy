@@ -115,7 +115,7 @@ Niy uses [CON](https://github.com/microic/con) to define model and conf files
 | Kernel | kernel size | [0, 0] |
 | Dilation | dilate the kernel | 1 |
 | Pad | padding | [0, 0] |
-| PoolType | **'max'**<br>**'ave'**<br>**'amax'**<br>**'rand'** | 'ave' |
+| PoolType | **'max'**<br>**'ave'**<br>**'amax'**: absolute maximum<br>**'rand'** | 'ave' |
 | IsLocal | switch to locally connected layer | false |
 | IsReverse | switch to deconvolution layer | false |
 | IsMerge | switch to merge layer | 1 |
