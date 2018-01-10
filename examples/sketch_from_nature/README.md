@@ -14,6 +14,8 @@ the color(r, g, b) of each pixel as output
 
 The artificial neural network will "sketch" gradually
 
+After about a few minutes, you will get the following picture
+<div><img src="files/_img_start.png" width="50%" /></div>
 After about 2 hours, you will get the following picture
 <div><img src="files/_img.png" width="50%" /></div>
 <br>
