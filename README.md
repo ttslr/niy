@@ -5,17 +5,6 @@ A super mini but powerful deep learning framework written in pure c language
 | **`Windows`** | **`Linux`** |
 |-------------|-------------|
 
-Sponsor Is Welcome
-----
-We need sponsorship to develop Niy<br>
-
-Sponsor will get the following rights:
-* Rename Niy
-* Get a copy of Niy's source code
-* Decide whether or not to make Niy open source
-
-The sponsorship will be used on developing Niy and nothing else
-
 Installation
 ----
 Select one of the following experiments
