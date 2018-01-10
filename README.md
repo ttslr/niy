@@ -135,9 +135,11 @@ Niy uses [CON](https://github.com/microic/con) to define model and conf files
 | LossInit |  initial loss | 5 |
 | LossMul | used to calculate the moving average of loss | 0.001 |
 | Regularization | used to limit bias/weight | 1 |
-| BiasFiller.Type | 'zero', 'uniform', 'usni', 'usno', 'usnio', 'usnf', 'gaussian', 'gsni', 'gsno', 'gsnio', 'gsnf' | 'zero'<br>
-> u means uniform
- s mean sqrt |
+| BiasFiller.Type | 'zero', 'uniform', 'usni', 'usno', 'usnio', 'usnf', 'gaussian', 'gsni', 'gsno', 'gsnio', 'gsnf' | 'zero'
+<pre>
+ u means uniform
+ s mean sqrt
+</pre> |
 | BiasFiller.Adj | used to adjust initial bias value<br><i>new = (old + adj[0])*adj[1]</i> | [0, 1] |
 | WeightFiller.Type | 'zero', 'uniform', 'usni', 'usno', 'usnio', 'usnf', 'gaussian', 'gsni', 'gsno', 'gsnio', 'gsnf' | 'gsni' |
 | WeightFiller.Adj | used to adjust initial weight value<br><i>new = (old + adj[0])*adj[1]</i> | [0, 0.8] |
