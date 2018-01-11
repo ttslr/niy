@@ -126,7 +126,7 @@ Niy uses [CON](https://github.com/microic/con) to define model and conf files
 | Regularization | used to limit bias/weight | 1 |
 | BiasFiller.Type | 'zero', 'uniform', 'usni', 'usno', 'usnio', 'usnf', 'gaussian', 'gsni', 'gsno', 'gsnio', 'gsnf'<br>*"u": uniform, "g": gaussian, "s": sqrt, "n": number, "i": input, "o": output* | 'zero' |
 | BiasFiller.Adj | used to adjust initial bias value<br><i>new = (old + adj[0])*adj[1]</i> | [0, 1] |
-| WeightFiller.Type | 'zero', 'uniform', 'usni', 'usno', 'usnio', 'usnf', 'gaussian', 'gsni', 'gsno', 'gsnio', 'gsnf'<br>*"u": uniform, "s": sqrt, "n": number, "i": input, "o": output* | 'gsni' |
+| WeightFiller.Type | 'zero', 'uniform', 'usni', 'usno', 'usnio', 'usnf', 'gaussian', 'gsni', 'gsno', 'gsnio', 'gsnf'<br>*"u": uniform, "g": gaussian, "s": sqrt, "n": number, "i": input, "o": output* | 'gsni' |
 | WeightFiller.Adj | used to adjust initial weight value<br><i>new = (old + adj[0])*adj[1]</i> | [0, 0.8] |
 | Image.Draw | draw current image or not | false |
 | Image.Adj | used to adjust pixel value<br><i>new = (old + adj[0])*adj[1]</i> | [0.5, 255] |
