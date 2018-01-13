@@ -3,7 +3,7 @@ Training An Artificial Neural Network To Sketch From Nature
 
 An artificial neural network can help artists design artworks. This example shows one method
 
-First, select a nature image to sketch4
+First, select a nature image to sketch
 <div><img src="files/peach_blossom.jpg" height="240px" /></div>
 
 Then, define a model for the artificial neural network
