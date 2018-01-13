@@ -4,7 +4,7 @@ Training An Artificial Neural Network To Sketch From Nature
 An artificial neural network can help artists design artworks. This example shows one method
 
 First, select a nature image to sketch4
-<div><img src="files/peach_blossom.jpg" height="200px" style="height:200px" /></div>
+<div><img src="files/peach_blossom.jpg" height="200px" /></div>
 
 Then, define a model for the artificial neural network
 <div><img src="files/model.png" /></div>
@@ -15,9 +15,9 @@ the color(r, g, b) of each pixel as output
 The artificial neural network will "sketch" gradually
 
 After a few minutes, you will get the following picture
-<div><img src="files/_img_start.png" max-width="500px" /></div>
+<div><img src="files/_img_start.png" height="200px" /></div>
 After about 2 hours, you will get the following picture
-<div><img src="files/_img.png" max-width="500px" /></div>
+<div><img src="files/_img.png" height="200px" /></div>
 <br>
 
 Go chess player can learn from AlphaGo, artists can learn to draw from machine too!
