@@ -119,7 +119,7 @@ Niy uses [CON](https://github.com/microic/con) to define model and conf files
 | Load | **0**: do not load<br>**1**: load biases and weights only<br>**2**: load all | 0 |
 | RateInit | initial learning rate | 0.02 |
 | RateDecay | learning rate decay | 0.9 |
-| InputType | **'pointwise'**<br>**'onehot'** | 'pointwise' |
+| InputType | **'pointwise'**<br>**'onehot'**<br>**'color'**: convert the input from gray scale image to color image | 'pointwise' |
 | LossType | **'mse'**<br>**'softmax'**<br>**'max'**<br>**'zero'** | 'mse' |
 | LossInit |  initial loss | 5 |
 | LossMul | used to calculate the moving average of loss | 0.001 |

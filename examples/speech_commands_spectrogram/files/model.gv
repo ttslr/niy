@@ -27,7 +27,7 @@ Input [label="Input    size: [128, 128, 3]"]
 Layer1 [label="Layer 1    size: [64, 64, 1]"]
 Layer2 [label="Layer 2    size: [32, 32, 2]"]
 Layer3 [label="Layer 3    size: [16, 16, 4]"]
-Layer4 [label="Layer 3    size: [8, 8, 8]"]
+Layer4 [label="Layer 4    size: [8, 8, 8]"]
 Output [label="Output    size: [1, 1, 10]"]
 
 Input->Layer1 [label="  Convolution    kernel: [6, 6], stride: [2, 2], pad: [2, 2]"]
