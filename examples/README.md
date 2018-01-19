@@ -11,3 +11,5 @@ Examples
 * [Training An Artificial Neural Network To Sketch From Nature](https://github.com/microic/niy/tree/master/examples/sketch_from_nature)
 
 * [The "Hello World" Example Of Audio Recognition Using Raw Waveform Data As Input](https://github.com/microic/niy/tree/master/examples/speech_commands)
+
+* [Audio Recognition Using Spectrogram As Input](https://github.com/microic/niy/tree/master/examples/speech_commands_spectrogram)
