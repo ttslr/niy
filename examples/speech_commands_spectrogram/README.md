@@ -6,7 +6,7 @@ Audio Recognition Using Spectrogram As Input
 
 By using spectrogram, we can simply treat audio recognition as image recognition, so all the technologies used at image recognition can be used at audio recognition as well
 
-This example uses the same samples as [speech_commands](../speech_commands/), WAVE audio files of people saying ten different words('yes', 'no', 'up', 'down', 'left', 'right', 'on', 'off', 'stop', 'go') from [Speech Commands dataset](https://storage.cloud.google.com/download.tensorflow.org/data/speech_commands_v0.01.tar.gz)
+This example uses the same samples as [speech_commands](../speech_commands/), that is WAVE audio files of people saying ten different words('yes', 'no', 'up', 'down', 'left', 'right', 'on', 'off', 'stop', 'go') from [Speech Commands dataset](https://storage.cloud.google.com/download.tensorflow.org/data/speech_commands_v0.01.tar.gz)
 
 First, transform the original audio files into spectrograms, for example, the spectrogram for [test.wav](files/test.wav) is:
 <img src="files/spectrogram.png" />
