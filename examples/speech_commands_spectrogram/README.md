@@ -8,7 +8,7 @@ This example uses the same samples as [speech_commands](../speech_commands/), WA
 First, transform the original audio files into spectrograms, for example, the spectrogram for [test.wav](files/test.wav) is:
 <img src="files/spectrogram.png" />
 
-To reduce the amount of computation, we limit the size of spectrogram to 128×128, the model can be defined as follow:
+To reduce the amount of computation, we limit the size of spectrogram to 128×128, so the model can be defined as follow:
 <div><img src="files/model.png" /></div> 
 
 
