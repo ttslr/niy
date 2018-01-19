@@ -25,8 +25,6 @@ def spectrogram(filepath):
 	framerate, wav_data = wavfile.read(filepath)
 
 	window_length = 512
-	nfrequency = 128
-	ntime = 128
 	window_shift = 121
 
 	if len(wav_data) > X_SIZE:
@@ -36,9 +34,9 @@ def spectrogram(filepath):
 	
 	X[:len(wav_data)] += wav_data
 
-	spec = np.zeros((nfrequency, ntime)).astype('float32')
+	spec = np.zeros((128, 128)).astype('float32')
 
-	for i in range(ntime):
+	for i in range(128):
 		start = i * window_shift
 		end = start + window_length
 
