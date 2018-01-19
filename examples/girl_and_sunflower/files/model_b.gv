@@ -1,0 +1,38 @@
+digraph nn{
+
+edge[
+	_color = pink
+	nodesep = 0.005
+	ranksep = 0.005
+	weight = 0.005
+	height = 0.005
+]
+node[
+	shape = rectangle 
+	color = gray 
+	_style = filled
+	_width = 0.1
+	_height = 0.1
+	label = ""
+	nodesep = 0.005
+	ranksep = 0.005
+]
+graph[
+	nodesep = 0.005
+	ranksep = 0.005
+	_rankdir = LR
+]
+
+Input [label="Input    size: [1, 1, 1]"]
+Layer1 [label="Layer 1    size: [8, 8, 8]"]
+Layer2 [label="Layer 2    size: [16, 16, 4]"]
+Layer3 [label="Layer 3    size: [32, 32, 2]"]
+Layer4 [label="Layer 4    size: [64, 64, 1]"]
+Output [label="Output    size: [128, 128, 3]"]
+
+Input->Layer1 [label="  Locally Connected Deconvolution    kernel: [8, 8]"]
+Layer1->Layer2 [label="  Locally Connected Deconvolution    kernel: [6, 6], pad: [2, 2]"]
+Layer2->Layer3 [label="  Locally Connected Deconvolution    kernel: [6, 6], pad: [2, 2]"]
+Layer3->Layer4 [label="  Locally Connected Deconvolution    kernel: [6, 6], pad: [2, 2]"]
+Layer4->Output [label="  Locally Connected Deconvolution    kernel: [6, 6], pad: [2, 2]"]
+}

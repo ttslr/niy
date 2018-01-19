@@ -1,0 +1,36 @@
+digraph nn{
+
+edge[
+	_color = pink
+	nodesep = 0.005
+	ranksep = 0.005
+	weight = 0.005
+	height = 0.005
+]
+node[
+	shape = rectangle 
+	color = gray 
+	_style = filled
+	_width = 0.1
+	_height = 0.1
+	label = ""
+	nodesep = 0.005
+	ranksep = 0.005
+]
+graph[
+	nodesep = 0.005
+	ranksep = 0.005
+	_rankdir = LR
+]
+
+Input [label="Input    size: [16000, 1, 1]"]
+Layer1 [label="Layer 1    size: [1599, 1, 2]"]
+Layer2 [label="Layer 2    size: [159, 1, 4]"]
+Layer3 [label="Layer 3    size: [15, 1, 8]"]
+Output [label="Output    size: [1, 1, 10]"]
+
+Input->Layer1 [label="  Convolution    kernel: [20, 1], stride: [10, 1]"]
+Layer1->Layer2 [label="  Convolution    kernel: [19, 1], stride: [10, 1]"]
+Layer2->Layer3 [label="  Convolution    kernel: [19, 1], stride: [10, 1]"]
+Layer3->Output [label="  Convolution    kernel: [15, 1], stride: [1, 1]"]
+}
