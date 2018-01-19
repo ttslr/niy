@@ -43,7 +43,7 @@ def spectrogram(filepath):
 		sig = np.abs(np.fft.rfft(X[start:end] * 
 				np.hanning(window_length)))
 
-		spec[:,i] = (sig[1:spec.shape[1] + 1])[::-1]
+		spec[:,i] = (sig[1:128 + 1])[::-1]
 
 	spec = (spec-spec.min())/(spec.max()-spec.min())
 
