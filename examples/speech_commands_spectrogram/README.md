@@ -12,7 +12,7 @@ The energy level is: Red > Green > Blue > Black(no energy)<br><br>
 To reduce the amount of computation, we limit the size of spectrogram to 128×128, so the model can be defined as follow:
 <div><img src="files/model.png" /></div> 
 
-Run this model, you will get a test accuracy around 92% after 60 minutes
+Run this model, you will get a test accuracy around 92% after 50 minutes
 
 
 Reference
