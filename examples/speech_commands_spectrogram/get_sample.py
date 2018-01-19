@@ -21,6 +21,7 @@ for command in commands:
 random.seed(2)
 
 X_SIZE = 16000
+IMG_SIZE = 128
 def spectrogram(filepath):
 	framerate, wav_data = wavfile.read(filepath)
 
@@ -34,16 +35,16 @@ def spectrogram(filepath):
 	
 	X[:len(wav_data)] += wav_data
 
-	spec = np.zeros((128, 128)).astype('float32')
+	spec = np.zeros((IMG_SIZE, IMG_SIZE)).astype('float32')
 
-	for i in range(128):
+	for i in range(IMG_SIZE):
 		start = i * window_shift
 		end = start + window_length
 
 		sig = np.abs(np.fft.rfft(X[start:end] * 
 				np.hanning(window_length)))
 
-		spec[:,i] = (sig[1:128 + 1])[::-1]
+		spec[:,i] = (sig[1:IMG_SIZE + 1])[::-1]
 
 	spec = (spec-spec.min())/(spec.max()-spec.min())
 
@@ -51,7 +52,7 @@ def spectrogram(filepath):
 
 train_in_bytes = bytearray()
 train_in_head = np.zeros(8).astype('int32')
-train_in_head[1:4] = [128, 128, 1]
+train_in_head[1:4] = [IMG_SIZE, IMG_SIZE, 1]
 train_in_bytes += train_in_head.tobytes()
 
 train_out_bytes = bytearray()
@@ -85,10 +86,10 @@ for (Y[0], command) in enumerate(commands):
 			test_in_bytes += X.tobytes()
 			test_out_bytes += Y.tobytes()
 
-# import matplotlib.pyplot as plt
-# plt.plot(spec)
-# plt.show()
-# os._exit(0)
+		# import matplotlib.pyplot as plt
+		# plt.imshow(X)
+		# plt.show()
+		# os._exit(0)
 
 with open("train_in.smpl", "wb") as file:
 	file.write(train_in_bytes)
