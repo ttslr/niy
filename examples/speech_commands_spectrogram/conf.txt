@@ -1,11 +1,11 @@
 {
-	Load: 2,
+	Load: 0,
 	
 	RateInit: 0.02,
 
-	EpochTrain: 2,
+	EpochTrain: 20,
 	EpochDecay: 0.5,
-	EpochLog: 0.2,
+	EpochLog: 0.5,
 
 	InputType: 'color',
 	LossType: 'max',
@@ -15,6 +15,6 @@
 		Src: 'layer 0',
 	},
 
-	FreqTest: 1,
+	FreqTest: 2,
 	FreqSave: 1,
 }
