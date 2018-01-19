@@ -9,6 +9,7 @@ First, transform the original audio files into spectrograms, for example, the sp
 <div><img src="files/spectrogram.png" /></div>
 The energy level is: Red > Green > Blue > Black(no energy)
 
+
 To reduce the amount of computation, we limit the size of spectrogram to 128×128, so the model can be defined as follow:
 <div><img src="files/model.png" /></div> 
 
