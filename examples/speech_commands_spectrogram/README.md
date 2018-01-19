@@ -1,3 +1,6 @@
+Debuging
+===
+
 Audio Recognition Using Spectrogram As Input 
 ====
 
