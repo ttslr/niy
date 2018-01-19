@@ -11,8 +11,7 @@ First, transform the original audio files into spectrograms, for example, the sp
 To reduce the amount of computation, we limit the size of spectrogram to 128×128, so the model can be defined as follow:
 <div><img src="files/model.png" /></div> 
 
-
-
+Run this model, you will get a test accuracy around 90% after 20 minutes
 
 Reference
 ----
