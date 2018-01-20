@@ -7,6 +7,9 @@ This example uses the same samples as [speech_commands](../speech_commands/), th
 
 First, transform the original audio files into spectrograms, we use the following python code to do the task:
 >	
+	import numpy as np
+	from scipy.io import wavfile
+	
 	X_SIZE = 16000
 	IMG_SIZE = 128
 
