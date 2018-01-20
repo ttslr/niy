@@ -45,7 +45,7 @@ For example, the spectrogram for [test.wav](files/test.wav) is:
 To reduce the amount of computation, we limit the size of spectrogram to 128×128, so the model can be defined as follow:
 <div><img src="files/model.png" /></div> 
 
-Run this model, you will get a test accuracy around 93% after 15 epochs
+Run this model, you will get a test accuracy around 93%(while train accuracy is 98%) after 15 epochs
 
 
 Reference

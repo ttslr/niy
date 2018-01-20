@@ -1,9 +1,9 @@
 {
-	Load: 0,
+	Load: 2,
 	
 	RateInit: 0.02,
 
-	EpochTrain: 20,
+	EpochTrain: 0,
 	EpochDecay: 0.5,
 	EpochLog: 0.5,
 
