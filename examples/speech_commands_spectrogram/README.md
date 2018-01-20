@@ -6,7 +6,8 @@ By using spectrogram, we can simply treat audio recognition as image recognition
 This example uses the same samples as [speech_commands](../speech_commands/), that is wave audio files of people saying ten different words('yes', 'no', 'up', 'down', 'left', 'right', 'on', 'off', 'stop', 'go') from [Speech Commands dataset](https://storage.cloud.google.com/download.tensorflow.org/data/speech_commands_v0.01.tar.gz)
 
 First, transform the original audio files into spectrograms, we use the following python code to do the task:
->	X_SIZE = 16000
+>	
+	X_SIZE = 16000
 	IMG_SIZE = 128
 
 	def spectrogram(filepath):
