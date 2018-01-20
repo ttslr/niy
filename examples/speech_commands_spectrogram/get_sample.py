@@ -41,30 +41,24 @@ def spectrogram(filepath):
 		start = i * window_shift
 		end = start + window_length
 
-		sig = np.abs(np.fft.rfft(X[start:end] * 
-				np.hanning(window_length)))
-
+		sig = np.abs(np.fft.rfft(X[start:end] * np.hanning(window_length)))
 		spec[:,i] = (sig[1:IMG_SIZE + 1])[::-1]
 
 	spec = (spec-spec.min())/(spec.max()-spec.min())
-
-	# spec = np.log((spec * 100 + 0.1))
-
 	spec = np.log10((spec * 100 + 0.01))
-
 	spec = (spec-spec.min())/(spec.max()-spec.min()) - 0.5
 
 	return spec
 
-import matplotlib.pyplot as plt
-X = spectrogram("files/test.wav")
-plt.imshow(X, cmap='gray')
-plt.xlabel("Time")
-plt.ylabel("Frequency")
-plt.xticks([])
-plt.yticks([])
-plt.show()
-os._exit(0)
+# import matplotlib.pyplot as plt
+# X = spectrogram("files/test.wav")
+# plt.imshow(X, cmap='gray')
+# plt.xlabel("Time")
+# plt.ylabel("Frequency")
+# plt.xticks([])
+# plt.yticks([])
+# plt.show()
+# os._exit(0)
 
 train_in_bytes = bytearray()
 train_in_head = np.zeros(8).astype('int32')
