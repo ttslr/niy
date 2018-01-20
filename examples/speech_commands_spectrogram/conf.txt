@@ -7,7 +7,7 @@
 	EpochDecay: 0.5,
 	EpochLog: 0.5,
 
-	InputType: 'color',
+	_InputType: 'color',
 	LossType: 'max',
 
 	Image: {

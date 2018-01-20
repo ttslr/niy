@@ -23,7 +23,7 @@ graph[
 	_rankdir = LR
 ]
 
-Input [label="Input    size: [128, 128, 3]"]
+Input [label="Input    size: [128, 128, 1]"]
 Layer1 [label="Layer 1    size: [64, 64, 1]"]
 Layer2 [label="Layer 2    size: [32, 32, 2]"]
 Layer3 [label="Layer 3    size: [16, 16, 4]"]

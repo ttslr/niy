@@ -48,7 +48,23 @@ def spectrogram(filepath):
 
 	spec = (spec-spec.min())/(spec.max()-spec.min())
 
+	# spec = np.log((spec * 100 + 0.1))
+
+	spec = np.log10((spec * 100 + 0.01))
+
+	spec = (spec-spec.min())/(spec.max()-spec.min()) - 0.5
+
 	return spec
+
+import matplotlib.pyplot as plt
+X = spectrogram("files/test.wav")
+plt.imshow(X, cmap='gray')
+plt.xlabel("Time")
+plt.ylabel("Frequency")
+plt.xticks([])
+plt.yticks([])
+plt.show()
+os._exit(0)
 
 train_in_bytes = bytearray()
 train_in_head = np.zeros(8).astype('int32')
@@ -85,11 +101,6 @@ for (Y[0], command) in enumerate(commands):
 		else:
 			test_in_bytes += X.tobytes()
 			test_out_bytes += Y.tobytes()
-
-		# import matplotlib.pyplot as plt
-		# plt.imshow(X)
-		# plt.show()
-		# os._exit(0)
 
 with open("train_in.smpl", "wb") as file:
 	file.write(train_in_bytes)
