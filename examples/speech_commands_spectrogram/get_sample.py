@@ -45,9 +45,7 @@ def spectrogram(filepath):
 		spec[:,i] = (sig[1:IMG_SIZE + 1])[::-1]
 
 	spec = (spec-spec.min())/(spec.max()-spec.min())
-	# spec = np.log10((spec * 50 + (1.0/50)))
-	# spec = np.log10((spec * 100 + (1.0/100)))
-	spec = np.log10((spec * 1000 + (1.0/1000)))
+	spec = np.log10((spec * 100 + (1.0/100)))
 	spec = (spec-spec.min())/(spec.max()-spec.min()) - 0.5
 
 	return spec
